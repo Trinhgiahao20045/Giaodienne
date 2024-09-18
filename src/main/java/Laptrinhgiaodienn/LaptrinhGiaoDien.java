@@ -11,14 +11,14 @@ import javax.swing.*;
  * @author ADMIN
  */
 public class LaptrinhGiaoDien extends JFrame {
-
     public LaptrinhGiaoDien() {
     }
-
     private JMenuBar menubar;
+    private JMenuBar menuzoom;
     private JMenu mfile, medit, mformat, mview, mhelp;
     private JMenuItem itemnew, itemopen, itemsave, itemsaveas, itempagesetup, itemprint, itemexit;
     private JMenuItem itemfont;
+    private JMenuItem itemzoomin, itemzoomout,itemrestoredefaultzoom;
     private JCheckBoxMenuItem itemwrap;
 
     public LaptrinhGiaoDien(String title) {
@@ -35,7 +35,7 @@ public class LaptrinhGiaoDien extends JFrame {
     private void processevent() {
     }
     private void createmenu() {
-        //tao doi tuong
+        //tao doi tuong menu
         menubar = new JMenuBar();
         //tao doi tuong cho menu
         menubar.add(mfile = new JMenu("file"));
@@ -64,6 +64,16 @@ public class LaptrinhGiaoDien extends JFrame {
         
         //gan doi tuong vao cua so
         setJMenuBar(menubar);
+        
+        
+        //tao doi tuong menu zoom
+        menuzoom = new JMenuBar();
+        //tao doi tuong con cho menu zoom
+         menuzoom.add(itemzoomin = new JMenuItem("Zoom In"));
+         menuzoom.add(itemzoomout = new JMenuItem("Zoom Out"));
+         menuzoom.add(itemrestoredefaultzoom = new JMenuItem("Restore Default Zoom"));
+         //gan doi tuong vao cua so
+        setJMenuBar(menuzoom);
     }
 
     private void createGUI() {
