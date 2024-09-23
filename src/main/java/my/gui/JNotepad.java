@@ -1,7 +1,7 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-package Laptrinhgiaodienn;
+package my.gui;
 
 import java.awt.event.KeyEvent;
 import javax.swing.*;
@@ -10,8 +10,8 @@ import javax.swing.*;
  *
  * @author ADMIN
  */
-public class LaptrinhGiaoDien extends JFrame {
-    public LaptrinhGiaoDien() {
+public class JNotepad extends JFrame {
+    public JNotepad() {
     }
     private JMenuBar menubar;
     private JMenuBar menuzoom;
@@ -21,7 +21,7 @@ public class LaptrinhGiaoDien extends JFrame {
     private JMenuItem itemzoomin, itemzoomout,itemrestoredefaultzoom;
     private JCheckBoxMenuItem itemwrap;
 
-    public LaptrinhGiaoDien(String title) {
+    public JNotepad(String title) {
         super(title);
         createmenu();
        createGUI();
